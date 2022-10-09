@@ -1,0 +1,61 @@
+https://tailwindcss.com
+
+
+//Integrate Methods 
+Using CDN Link (Content Deliver Network)
+CLI (Nodejs)
+Using Post CSS (Nodejs)
+
+Nodejs Dowload for linux
+
+sudo apt update
+sudo apt install nodejs
+node -v
+
+Using CDN Link
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+Using PostCss
+open folder "usingpostcss"
+open terminal
+npm install -D tailwindcss postcss autoprefixer
+
+=> Create tailwind.config file
+
+npx tailwindcss init
+
+=> Add PostCss file
+=> go to tailwind.config.js
+=> and write down in content: ["./public/**/*.html"]
+
+. =  current folder
+** = all folder of inside in public folder
+* = all html files
+
+=> Create Tailwind main files
+=> Create new folder and naming "tailwind"
+=> Create new file and naming "main.css"
+
+=>Build Process
+= write down 'npm init -y' in terminal(so it will create package.json)
+= write down in package.json > 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "build" : "tailwind -i ./tailwind/main.css -0
+  },
+
+-i = install
+-o = open
+
+=> go to terminal and run "npm run build"
+
+
+=> watch
+go to package.json , write down
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "tailwind -i ./Tailwind/main.css -o ./public/tailwind.css",
+    "watch" : "tailwind -i ./Tailwind/main.css -o ./public/tailwind.css --watch"
+  },
