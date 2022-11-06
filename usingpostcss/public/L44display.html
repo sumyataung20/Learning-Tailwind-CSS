@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <link href="./tailwind.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: silver;
+      }
+
+      .bigbox {
+        width: 600px;
+        height: 200px;
+        background-color: grey;
+      }
+
+      .div1 {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        color: #fff;
+      }
+
+      .div2 {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box flex">
+      <div class="div1">1</div>
+      <div class="div2">2</div>
+    </div>
+    <br />
+
+    <div class="box flex justify-start">
+      <div class="div1">1</div>
+    </div>
+    <br />
+
+    <div class="box flex justify-center">
+      <div class="div1">1</div>
+    </div>
+    <br />
+
+    <div class="box flex justify-end">
+      <div class="div1">1</div>
+    </div>
+    <br />
+
+    <div class="bigbox flex justify-between">
+      <div class="div1">1</div>
+      <div class="div2">2</div>
+    </div>
+    <br />
+
+    <div class="bigbox flex justify-around">
+      <div class="div1">1</div>
+      <div class="div2">2</div>
+    </div>
+    <br />
+
+    <div class="bigbox flex justify-evenly">
+      <div class="div1">1</div>
+      <div class="div2">2</div>
+    </div>
+    <br />
+
+    <div class="box flex items-start">
+      <div class="div1">1</div>
+      <div class="div2">2</div>
+    </div>
+    <br />
+
+    <div class="box flex items-end">
+      <div class="div1">1</div>
+      <div class="div2">2</div>
+    </div>
+    <br />
+
+    <div class="box flex items-center">
+      <div class="div1">1</div>
+      <div class="div2">2</div>
+    </div>
+    <br />
+
+    <div class="bigbox flex items-start justify-end">
+      <div class="div1">1</div>
+    </div>
+    <br />
+
+    <div class="bigbox flex items-center justify-center">
+      <div class="div1">1</div>
+    </div>
+    <br />
+
+    <div class="bigbox flex items-end justify-start">
+      <div class="div1">1</div>
+    </div>
+    <br />
+
+    <h1 class="bg-green-500">Save Myanmar</h1>
+
+    <h1 class="bg-green-500 inline">Pray Myanmar</h1>
+
+    <br />
+
+    <span class="bg-rose-300">Save Sirilanka</span>
+    <span class="bg-rose-500 block">Pray Sirilanka</span>
+
+    <br />
+
+    <span class="bg-rose-300 inline-block">Hello Thailand</span>
+    <span class="bg-rose-500 inline-block">Bye Thailand</span>
+
+    <br />
+
+    <span class="bg-sky-300 hidden">Hello Indonesia</span>
+    <span class="bg-sky-300 hidden">Bye Indonesia</span>
+  </body>
+</html>
+
+
+<!-- 
+flex            display: flex;
+inline          display: inline;
+block           display: block;
+hidden          display: none;
+grid            display: grid;
+-->
+
+<!-- 
+justify-start               justify-content: start;
+justify-center              justify-content: center;
+justify-end                 justify-content: end;
+justify-between             justify-content: space-between;
+justify-around              justify-content: space-around;
+justify-evenly              justify-content: space-evenly;
+-->
+
+<!-- 
+items-start                 align-items: start;      
+items-center                align-items: center;
+items-end                   align-items: end;

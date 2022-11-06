@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Width & Height</title>
+    <link href="./tailwind.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>This is Tailwind CSS</h1>
+
+    <div class="w-96 bg-rose-200">Day1</div>
+    <div class="w-40 bg-stone-200">Day2</div>
+    <div class="w-auto bg-stone-200">Day3</div>
+    <div class="w-full bg-slate-200">Div 4</div>
+    <div class="w-full bg-stone-200">Day5</div>
+    <div class="w-1/2 bg-cyan-900">Div6</div>
+
+    <hr />
+
+    <div class="w-96 bg-rose-200">Day1</div>
+    <div class="w-40 h-40 bg-stone-200">Day2</div>
+    <div class="w-auto h-auto bg-stone-200">Day3</div>
+    <div class="w-full h-40 bg-slate-200">
+      <div class="w-1/5 h-full bg-red-500"></div>
+    </div>
+
+    <div class="w-full h-80 bg-stone-200">Day5</div>
+    <div class="w-1/2 bg-cyan-900">Div6</div>
+  </body>
+</html>
+
+<!-- w-0        width: 0px;
+w-px       width: 1px;
+w-0.5      width:2px;
+w-1        width: 4px;
+1.5 2 2.5 3 3.5 4 = 1 rem (16px)
+
+5 6 7 .... 12 
+14 to 16
+20 24 28 32 36 40 44 48 52 56 60 64 
+72 80 
+96 -->
+
+<!-- w-auto   width: auto;
+
+w-1/2    width: 50%;
+
+w-full   width: 100%;
+
+w-screen  width: 100vw; -->
+<!-- 
+h-0   height: 0px;
+h-px   height: 1px;
+h-0.5   height: 2px;
+h-1   height: 4px;
+1.5 2 2.5 3 3.5 4 = 1 rem (16px)
+
+5 6 7 .... 12 
+14 to 16
+20 24 28 32 36 40 44 48 52 56 60 64 
+72 80 
+96 -->
+
+<!-- thet mhat chat height shi mha thone loh ya ml
+height is infinity  -->
+
+<!-- h-auto   height: auto;
+
+h-1/2    height: 50%;
+
+h-full   height: 100%;
+
+h-screen  width: 100vw; -->
