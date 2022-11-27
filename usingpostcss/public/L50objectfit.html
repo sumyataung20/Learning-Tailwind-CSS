@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Fit</title>
+    <link rel="stylesheet" href="./tailwind.css" type="text/css" />
+  </head>
+  <body>
+    <h1>This is Tailwind CSS</h1>
+
+    <div class="bg-indigo-300 mb-5">
+      <img src="./Img/image.png" class="w-96 h-52 mx-auto" alt="" /> //null
+    </div>
+
+    <div class="bg-indigo-300 mb-5">
+      <img src="./Img/image.png" class="w-96 h-52 mx-auto object-none" alt="" />
+      //none
+    </div>
+
+    <div class="bg-indigo-300 mb-5">
+      <img
+        src="./Img/image.png"
+        class="w-96 h-52 mx-auto object-contain"
+        alt=""
+      />
+      //contain
+    </div>
+
+    <div class="bg-indigo-300 mb-5">
+      <img
+        src="./Img/image.png"
+        class="w-96 h-52 mx-auto object-cover"
+        alt=""
+      />
+      //cover
+    </div>
+
+    <div class="bg-indigo-300">
+      <img
+        src="./Img/image.png"
+        class="w-96 h-52 mx-auto object-scale-down"
+        alt=""
+      />
+      //object-scale-down
+    </div>
+  </body>
+</html>
+
+<!-- 
+object-none        object-fit: none;
+object-contain     object-fit: cover;
+object-cover       object-fit: cover;
+object-fill        object-fit: fill;
+object-scale-down  object-fit scale-down; -->
